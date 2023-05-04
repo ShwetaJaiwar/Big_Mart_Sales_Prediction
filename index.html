@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sales Prediction</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="dtox" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/Venobox/venobox.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- hero area -->
+<section class="hero-section hero" data-background="" style="background-image: url(images/hero-area/banner-bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center zindex-1">
+        <h1 class="mb-3">Sales Prediction System<br>
+          using ML Algorithm</h1>
+        <p class="mb-4">by Sakshi Shete, Shweta Jaiswar, Maitri Mistry, Manasi Dayete</p>
+        <a href="#feature" class="btn btn-secondary btn-lg">Start Predicting</a>
+        <!-- banner image -->
+        <img class="img-fluid w-100 banner-image" src="images/hero-area/banner-img.png" alt="banner-img">
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <div id="scene">
+    <img class="img-fluid hero-bg-1 up-down-animation" src="images/background-shape/feature-bg-2.png" alt="">
+    <img class="img-fluid hero-bg-2 left-right-animation" src="images/background-shape/seo-ball-1.png" alt="">
+    <img class="img-fluid hero-bg-3 left-right-animation" src="images/background-shape/seo-half-cycle.png" alt="">
+    <img class="img-fluid hero-bg-4 up-down-animation" src="images/background-shape/green-dot.png" alt="">
+    <img class="img-fluid hero-bg-5 left-right-animation" src="images/background-shape/blue-half-cycle.png" alt="">
+    <img class="img-fluid hero-bg-6 up-down-animation" src="images/background-shape/seo-ball-1.png" alt="">
+    <img class="img-fluid hero-bg-7 left-right-animation" src="images/background-shape/yellow-triangle.png" alt="">
+    <img class="img-fluid hero-bg-8 up-down-animation" src="images/background-shape/service-half-cycle.png" alt="">
+    <img class="img-fluid hero-bg-9 up-down-animation" src="images/background-shape/team-bg-triangle.png" alt="">
+  </div>
+</section>
+<!-- /hero-area -->
+
+<!-- feature -->
+<section class="section feature mb-0" id="feature">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Start Predicting for your Organization</h2>
+       
+        <form>
+          <div class="mb-4">
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter Item Weight">
+          </div>
+
+          <select class="form-control form-control-lg" aria-label="Default select example">
+            <option selected>Select Fat Content</option>
+            <option value="Low Fat">Low Fat</option>
+            <option value="Regular">Regular</option>
+          </select><br>
+		  
+		  <div class="form-group">
+                 <select class="form-control chosen" name="Item_Type" required="required">
+               </div>
+                   <option value="" selected>Item Type</option>
+                   <option value="0">Baking Goods</option>
+                   <option value="1">Breads</option>
+                   <option value="2">Breakfast</option>
+                   <option value="3">Canned</option>
+		            <option value="4">Dairy</option>
+                   <option value="5">Frozen Foods</option>
+                   <option value="6">Fruits and Vegetables</option>
+                   <option value="7">Hard Drinks</option>
+		             <option value="8">Health and Hygiene</option>
+                   <option value="9">Household</option>
+                   <option value="10">Meat</option>
+                   <option value="11">Others</option>
+		            <option value="12">Seafood</option>
+                   <option value="13">Snack Foods</option>
+                   <option value="14">Soft Drinks</option>
+                   <option value="15">Starchy Foods</option>
+                 </select>
+                 </select>
+               </div>
+  
+          <div class="mb-4">
+            <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Enter Item Visibility">
+          </div>
+
+          <select class="form-control form-control-lg" aria-label="Default select example">
+            <option disabled selected>Select Item Type</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Meat">Meat</option>
+          </select><br>
+
+          <div class="mb-4">
+            <input type="number" class="form-control" id="exampleFormControlInput5" placeholder="Enter Item MRP">
+          </div>
+
+          <select class="form-control form-control-lg" aria-label="Default select example">
+            <option disabled selected>Select Outlet Size</option>
+            <option value="Breakfast">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Small">Small</option>
+          </select><br>
+
+          <select class="form-control form-control-lg" aria-label="Default select example">
+            <option disabled selected>Select Outlet Location Type</option>
+            <option value="Tier 1">Tier 1</option>
+            <option value="Tier 2">Tier 2</option>
+            <option value="Tier 3">Tier 3</option>
+          </select><br>
+
+          <select class="form-control form-control-lg" aria-label="Default select example">
+            <option disabled selected>Select Outlet Type</option>
+            <option value="Grocery Store">Grocery Store</option>
+            <option value="Supermarket Type1">Supermarket Type1</option>
+            <option value="Supermarket Type2">Supermarket Type2</option>
+          </select><br>
+
+          <div class="mb-4">
+            <input type="number" class="form-control" id="exampleFormControlInput9" placeholder="Enter Year Established">
+          </div>
+          <button type="submit" class="btn btn-secondary btn-lg">Predict</button>
+          <button type="reset" class="btn btn-secondary btn-lg">Reset</button>
+          </form>
+      </div>
+      
+    </div>
+  </div>
+  <img class="feature-bg-1 up-down-animation" src="images/background-shape/feature-bg-1.png" alt="bg-shape">
+  <img class="feature-bg-2 left-right-animation" src="images/background-shape/feature-bg-2.png" alt="bg-shape">
+</section>
+<!-- /feature -->
+
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- venobox -->
+<script src="plugins/Venobox/venobox.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
